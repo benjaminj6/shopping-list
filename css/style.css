@@ -1,6 +1,6 @@
 /* TEMPORARY STYLING DURING LAYOUT PHASE */
 * {
-	outline: 1px solid red;
+	outline: 1px dotted #ddd;
 }
 
 /* --------------------- */
@@ -10,30 +10,60 @@ body {}
 .content-padding {
 	width: 80%;
 	margin: 0 auto;
-	text-align: center;
 }
 /* -- ELEMENT STYLINGS -- */ 
 
 /* -- <HEADER> STYLINGS -- */
 header {
-	background-color: #666;
+	/*background-color: #666;*/
 }
-header h1 {}
+
+header div.content-padding {
+ padding: 20px 0;
+}
+
+header h1 {
+	text-align: left;
+	display: inline-flex;
+	margin: 0;
+}
+
+header nav {
+	display: inline-block;
+	width: 40px;
+	font-size: 2em;
+	text-align: center;
+	float: right;
+}
+header nav i {}
 
 /* -- <SECTION> STYLING -- */
 section {}
-section div.content-padding {}
-section div.content-padding div.add-item {}
-section div.content-padding div.add-item input {}
-section div.content-padding div.add-item button {}
-section div.content-padding ul {
+section div.content-padding {
+	/*background: #999;*/
+	margin-top: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+section div.add-item {}
+section div.add-item input {
+	width: 50%;
+}
+section div.add-item button {}
+
+section ul {
 	padding-left: 0;
 	list-style: none;
-	background-color: #999999;
+	/*background-color: #eee;*/
 }
-section div.content-padding ul li {}
-section div.content-padding ul li button.status-btn {}
-section div.content-padding ul li p {
+
+section ul li {}
+section ul li input.status-box {}
+
+section ul li p {
 	display: inline;
+	padding: 0 20%;
 }
-section div.content-padding ul li button.remove-btn {}
+
+section ul li button.remove-btn {}
