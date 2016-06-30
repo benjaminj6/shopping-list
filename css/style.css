@@ -1,0 +1,39 @@
+/* TEMPORARY STYLING DURING LAYOUT PHASE */
+* {
+	outline: 1px solid red;
+}
+
+/* --------------------- */
+html {}
+body {}
+/* --CLASS STYLINGS-- */
+.content-padding {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+/* -- ELEMENT STYLINGS -- */ 
+
+/* -- <HEADER> STYLINGS -- */
+header {
+	background-color: #666;
+}
+header h1 {}
+
+/* -- <SECTION> STYLING -- */
+section {}
+section div.content-padding {}
+section div.content-padding div.add-item {}
+section div.content-padding div.add-item input {}
+section div.content-padding div.add-item button {}
+section div.content-padding ul {
+	padding-left: 0;
+	list-style: none;
+	background-color: #999999;
+}
+section div.content-padding ul li {}
+section div.content-padding ul li button.status-btn {}
+section div.content-padding ul li p {
+	display: inline;
+}
+section div.content-padding ul li button.remove-btn {}
