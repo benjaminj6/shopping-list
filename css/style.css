@@ -1,12 +1,15 @@
 /* TEMPORARY STYLING DURING LAYOUT PHASE */
 * {
-	outline: 1px dotted #ddd;
+	/*outline: 1px dotted #ddd;*/
 }
 
 /* --------------------- */
+
 html {}
 body {}
+
 /* --CLASS STYLINGS-- */
+
 .content-padding {
 	width: 90%;
 	margin: 0 auto;
@@ -15,11 +18,13 @@ body {}
 .hidden {
 	display: none;
 }
+
 /* -- ELEMENT STYLINGS -- */ 
 
 /* -- <HEADER> STYLINGS -- */
+
 header {
-	background-color: #666;
+	background-color: #aaa;
 }
 
 header div.content-padding {
@@ -44,16 +49,18 @@ header nav ul {
 	display: none;
 	list-style: none;
 }
+
 header nav ul li {}
 
 /* -- <SECTION> STYLING -- */
+
 section {
 	text-align: left;
 	text-align: center;
 }
 section div.content-padding {
 	margin: 1.5em auto;
-	max-width: 700px
+	max-width: 400px
 }
 
 section h3 {
@@ -63,30 +70,31 @@ section h3 {
 section div.add-item {
 	margin-top: 1.5em;
 	margin-bottom: .5em;
+	padding: 1%;
+	display: flex;
 }
 
 section div.add-item input.add-item-text {
-	/*width: 50%;*/
+	width: 100%;
 }
-section div.add-item input.add-button {}
+
+section div.add-item input.add-button {
+	width: 50px;
+}
 
 section ul {
 	padding-left: 0;
 	list-style: none;
-	display: block;
 	margin: 0;
 	text-align: left;
-	/*background-color: #eee;*/
 }
 
 section ul li {
-	max-width: 500px;
-	margin: 0 auto;
 	padding: 1em 1%;
 }
 
 section ul li div.check-box {
-	display: inline;
+	float: left;
 }
 
 section ul li p {
@@ -99,3 +107,22 @@ section ul li p {
 section ul li i.remove-btn {
 		float: right;
 }
+
+
+/* -- <LI> STYLING FOR INTERACTION -- */
+li.checked {}
+li.checked div.check-box {}
+li.checked div.check-box i.fa-check-square-o {}
+li.checked div.check-box i.fa-square-o {}
+li.checked p {}
+li.checked i.remove-btn {}
+
+li.user-hover {}
+li.user-hover div.check-box {}
+li.user-hover div.check-box i.fa-check-square-o {}
+li.user-hover div.check-box i.fa-square-o {}
+li.user-hover p {}
+li.user-hover i.remove-btn {}
+	
+
+/* ----------------------------------- */
