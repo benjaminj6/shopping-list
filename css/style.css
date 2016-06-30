@@ -8,7 +8,7 @@ html {}
 body {}
 /* --CLASS STYLINGS-- */
 .content-padding {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 /* -- ELEMENT STYLINGS -- */ 
@@ -23,47 +23,57 @@ header div.content-padding {
 }
 
 header h1 {
-	text-align: left;
-	display: inline-flex;
+	display: inline-block;
+	width: 80%;
 	margin: 0;
 }
 
 header nav {
-	display: inline-block;
-	width: 40px;
-	font-size: 2em;
-	text-align: center;
 	float: right;
 }
-header nav i {}
+
+header nav i.fa-bars {
+	font-size: 32px;
+}
+
+header nav ul {
+	display: none;
+	list-style: none;
+}
+header nav ul li {}
 
 /* -- <SECTION> STYLING -- */
-section {}
-section div.content-padding {
-	/*background: #999;*/
-	margin-top: 5px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+section {
 	text-align: center;
 }
+section div.content-padding {}
+
 section div.add-item {}
-section div.add-item input {
+
+section div.add-item input.add-item-text {
 	width: 50%;
 }
-section div.add-item button {}
+section div.add-item input.add-button {}
 
 section ul {
 	padding-left: 0;
 	list-style: none;
+	display: block;
 	/*background-color: #eee;*/
 }
 
 section ul li {}
-section ul li input.status-box {}
-
-section ul li p {
-	display: inline;
-	padding: 0 20%;
+section ul li input.status-box {
+	margin: 0 1%;
 }
 
-section ul li button.remove-btn {}
+section ul li p {
+	display: inline-block;
+	width: 46%;
+	margin: 1em auto;
+	
+}
+
+section ul li i.remove-btn {
+
+}
