@@ -15,7 +15,7 @@ body {}
 
 /* -- <HEADER> STYLINGS -- */
 header {
-	/*background-color: #666;*/
+	background-color: #666;
 }
 
 header div.content-padding {
@@ -44,14 +44,25 @@ header nav ul li {}
 
 /* -- <SECTION> STYLING -- */
 section {
+	text-align: left;
 	text-align: center;
 }
-section div.content-padding {}
+section div.content-padding {
+	margin: 1.5em auto;
+	max-width: 700px
+}
 
-section div.add-item {}
+section h3 {
+	margin: 0;
+}
+
+section div.add-item {
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+}
 
 section div.add-item input.add-item-text {
-	width: 50%;
+	/*width: 50%;*/
 }
 section div.add-item input.add-button {}
 
@@ -59,21 +70,27 @@ section ul {
 	padding-left: 0;
 	list-style: none;
 	display: block;
+	margin: 0;
+	text-align: left;
 	/*background-color: #eee;*/
 }
 
-section ul li {}
+section ul li {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 1em 1%;
+}
+
 section ul li input.status-box {
-	margin: 0 1%;
 }
 
 section ul li p {
 	display: inline-block;
-	width: 46%;
-	margin: 1em auto;
-	
+	width: 60%;
+	padding-left: 1%;
+	margin: 0 auto;
 }
 
 section ul li i.remove-btn {
-
+		float: right;
 }
