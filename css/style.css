@@ -11,6 +11,10 @@ body {}
 	width: 90%;
 	margin: 0 auto;
 }
+
+.hidden {
+	display: none;
+}
 /* -- ELEMENT STYLINGS -- */ 
 
 /* -- <HEADER> STYLINGS -- */
@@ -81,7 +85,8 @@ section ul li {
 	padding: 1em 1%;
 }
 
-section ul li input.status-box {
+section ul li div.check-box {
+	display: inline;
 }
 
 section ul li p {
