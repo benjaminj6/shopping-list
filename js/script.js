@@ -16,8 +16,40 @@ console.log('hey there');
 
 //LIST-MGMT-BOX EVENTS
 
-	//User submits input box with 'Enter' or add-button
-		//List item is added
+	//User submits input box with 'Enter'
+		$('html').keydown(function(event) {
+			var userInput = $('.add-item-text').val();
+			var listItemHtml = '<li> <div class="check-box">' +
+				'<i class="hidden fa fa-check-square-o" aria-hidden="true"></i>' +
+				'<i class="fa fa-square-o" aria-hidden="true"></i>' +
+				'</div><p>' +  
+				userInput +
+				'</p><i class="remove-button fa fa-trash-o" aria-hidden="true">' +
+				'</i></li>'
+
+			if (event.which == 13 && userInput != '') {
+				$('.current-list').prepend(listItemHtml);
+				$('.add-item-text').val('')
+			}
+		});
+
+	//User submits input box with Button
+		$('.add-button').click(function(event) {
+			var userInput = $('.add-item-text').val();
+			var listItemHtml = '<li> <div class="check-box">' +
+				'<i class="hidden fa fa-check-square-o" aria-hidden="true"></i>' +
+				'<i class="fa fa-square-o" aria-hidden="true"></i>' +
+				'</div><p>' +  
+				userInput +
+				'</p><i class="remove-button fa fa-trash-o" aria-hidden="true">' +
+				'</i></li>'
+
+			if (userInput != '') {
+				$('.current-list').prepend(listItemHtml);
+				$('.add-item-text').val('')
+			}
+		});
+
 	//User hovers over Check-all button
 	//User clicks Check-all button
 		//All items 
