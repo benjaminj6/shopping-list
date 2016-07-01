@@ -42,13 +42,12 @@ header h1 {
 
 main {
 	font-size: 20px;
+	margin: 3em auto;
+	max-width: 400px;
 	text-align: center;
 }
 
-main div.content-padding {
-	margin: 3em auto;
-	max-width: 400px
-}
+/* -- .LIST-MENU STYLING -- */
 
 section.list-menu {}
 
@@ -70,9 +69,12 @@ section.list-menu nav ul {
 
 section.list-menu nav ul li {}
 
+/* -- .LIST-MGMT-BOX STYLING -- */
+
 section.list-mgmt-box {
 	border-bottom: 2px solid #000;
 	border-top: 2px solid #000;
+	margin-top: 5px;
 }
 
 section.list-mgmt-box div.add-item {
@@ -86,7 +88,7 @@ section.list-mgmt-box div.add-item input.add-item-text {
 }
 
 section.list-mgmt-box div.add-item button.add-button {
-	background-color: #888;
+	background-color: #aaa;
 	border: none;
 	width: 50px;
 }
@@ -104,6 +106,8 @@ section.list-mgmt-box div.list-mgmt-buttons button {
 section.list-mgmt-box div.list-mgmt-buttons button.check-all {}
 section.list-mgmt-box div.list-mgmt-buttons button.uncheck-all {}
 section.list-mgmt-box div.list-mgmt-buttons button.remove-all {}
+
+/* -- .SHOPPING-LIST STYLING -- */
 
 section.shopping-list ul.current-list {
 	list-style: none;
@@ -135,16 +139,25 @@ section.shopping-list ul.hidden-list {}
 
 /* -- <LI> STYLING FOR INTERACTION -- */
 
-/* --'CHECKED' STYLING-- */
-li.checked {}
+/* -- .CHECKED STYLING -- */
+
+li.checked {
+	opacity: .3;
+}
+
 li.checked div.check-box {}
 li.checked div.check-box i.fa-check-square-o {}
 li.checked div.check-box i.fa-square-o {}
 li.checked p {}
 li.checked i.remove-btn {}
 
-/* --'USER-HOVER' STYLING-- */
-li.user-hover {}
+/* -- .USER-HOVER STYLING-- */
+
+li.user-hover {
+	font-weight: bolder;
+	font-size: 21px;
+}
+
 li.user-hover div.check-box {}
 li.user-hover div.check-box i.fa-check-square-o {}
 li.user-hover div.check-box i.fa-square-o {}
