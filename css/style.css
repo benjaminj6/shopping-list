@@ -81,7 +81,7 @@ section.list-mgmt-box {
 section.list-mgmt-box div.add-item {
 	display: flex;
 	margin: 1.5em -0px .5em;
-	padding: 1%;
+	padding: 5px;
 }
 
 section.list-mgmt-box div.add-item input.add-item-text {
