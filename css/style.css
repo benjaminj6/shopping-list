@@ -60,14 +60,15 @@ section.list-menu nav {
 	display: inline;
 }
 
-section.list-menu nav i.fa-angle-down {}
+section.list-menu i.fa-angle-down {}
 
-section.list-menu nav ul {
+section.list-menu ul {
 	display: none;
 	list-style: none;
+	padding-left: 0;
 }
 
-section.list-menu nav ul li {}
+section.list-menu ul li {}
 
 /* -- .LIST-MGMT-BOX STYLING -- */
 
@@ -104,7 +105,6 @@ section.list-mgmt-box div.list-mgmt-buttons button {
 }
 
 section.list-mgmt-box div.list-mgmt-buttons button.check-all {}
-section.list-mgmt-box div.list-mgmt-buttons button.uncheck-all {}
 section.list-mgmt-box div.list-mgmt-buttons button.remove-all {}
 
 /* -- .SHOPPING-LIST STYLING -- */
@@ -131,7 +131,7 @@ section.shopping-list ul.current-list li p {
 	width: 60%;
 }
 
-section.shopping-list ul.current-list li i.remove-btn {
+section.shopping-list ul.current-list li i.remove-button {
 	float: right;
 }
 
@@ -145,24 +145,17 @@ li.checked {
 	opacity: .3;
 }
 
-li.checked div.check-box {}
-li.checked div.check-box i.fa-check-square-o {}
-li.checked div.check-box i.fa-square-o {}
-li.checked p {}
-li.checked i.remove-btn {}
-
 /* -- .USER-HOVER STYLING-- */
 
-li.user-hover {
-	font-weight: bolder;
+.user-hover {
+	font-weight: bold;
 	font-size: 21px;
 }
 
-li.user-hover div.check-box {}
-li.user-hover div.check-box i.fa-check-square-o {}
-li.user-hover div.check-box i.fa-square-o {}
-li.user-hover p {}
-li.user-hover i.remove-btn {}
-	
+/* -- .ICON-HOVER STYLING -- */
+
+.icon-hover {
+	font-weight: bold;
+}
 
 /* ----------------------------------- */
