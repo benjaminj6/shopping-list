@@ -47,6 +47,8 @@ $(document).ready(function() {
 	});
 
 	//User hovers over Check-all button
+
+
 	//User clicks Check-all button
 		//All items 
 	//User hovers over Remove-all button
