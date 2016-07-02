@@ -91,7 +91,7 @@ section.list-mgmt-box div.add-item input.add-item-text {
 section.list-mgmt-box div.add-item button.add-button {
 	background-color: #aaa;
 	border: none;
-	width: 50px;
+	padding: 3px 5px;
 }
 
 section.list-mgmt-box div.list-mgmt-buttons {
@@ -149,7 +149,7 @@ li.checked {
 
 .user-hover {
 	font-weight: bold;
-	font-size: 21px;
+	font-size: 1.1em;
 }
 
 /* -- .ICON-HOVER STYLING -- */

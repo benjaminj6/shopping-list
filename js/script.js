@@ -46,12 +46,16 @@ $(document).ready(function() {
 		$('.add-item-text').val('');
 	});
 
+	//User hovers over Add button
+	$('.list-mgmt-box button').hover(function() {
+		$(this).toggleClass('user-hover');
+	});
+
 	//User hovers over Check-all button
 
 
 	//User clicks Check-all button
 		//All items 
-	//User hovers over Remove-all button
 	//User clicks Remove-all button
 
 //SHOPPING-LIST EVENTS
