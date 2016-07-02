@@ -41,18 +41,18 @@ header h1 {
 /* -- <MAIN> STYLING -- */
 
 main {
-	font-size: 20px;
+	font-size: 24px;
 	margin: 3em auto;
 	max-width: 400px;
 	text-align: center;
 }
 
-/* -- .LIST-MENU STYLING -- */
+/* -- SECTION.LIST-MENU STYLING -- */
 
 section.list-menu {}
 
-section.list-menu h3 {
-	font-size: 28px;
+.list-menu h3 {
+	font-size: 32px;
 	margin: 0;
 }
 
@@ -76,12 +76,12 @@ section.list-mgmt-box {
 	border-bottom: 2px solid #000;
 	border-top: 2px solid #000;
 	margin-top: 5px;
+	padding: 0 7px;
 }
 
 section.list-mgmt-box div.add-item {
 	display: -webkit-flex;
 	margin: 1.5em -0px .5em;
-	padding: 5px;
 }
 
 section.list-mgmt-box div.add-item input.add-item-text {
@@ -101,7 +101,7 @@ section.list-mgmt-box div.list-mgmt-buttons {
 section.list-mgmt-box div.list-mgmt-buttons button {
 	background-color: #aaa;
 	border: none;
-	max-width: 40%;
+	max-width: 60%;
 }
 
 section.list-mgmt-box div.list-mgmt-buttons button.check-all {}
@@ -112,12 +112,12 @@ section.list-mgmt-box div.list-mgmt-buttons button.remove-all {}
 section.shopping-list ul.current-list {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 0 7px;
 	text-align: left;
 }
 
 section.shopping-list ul.current-list li {
-	padding: 1em 1%;
+	padding: 1em 0;
 }
 
 section.shopping-list ul.current-list li div.check-box {
@@ -127,7 +127,7 @@ section.shopping-list ul.current-list li div.check-box {
 section.shopping-list ul.current-list li p {
 	display: inline-block;
 	margin: 0 auto;
-	padding-left: 5px;
+	padding-left: 10px;
 	width: 60%;
 }
 
@@ -137,7 +137,13 @@ section.shopping-list ul.current-list li i.remove-button {
 
 section.shopping-list ul.hidden-list {}
 
-/* -- <LI> STYLING FOR INTERACTION -- */
+/* -- STYLINGS FOR INTERACTION -- */
+
+/* -- .MENU-HOVER STYLING -- */
+.menu-hover {
+	font-weight: bolder;
+	font-size: 34px !important;
+}
 
 /* -- .CHECKED STYLING -- */
 
@@ -149,7 +155,7 @@ li.checked {
 
 .user-hover {
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 26px;
 }
 
 /* -- .ICON-HOVER STYLING -- */

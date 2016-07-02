@@ -2,6 +2,10 @@ $(document).ready(function() {
 //LIST-MENU EVENTS
 
 	//User hovers over down list header
+	$('.list-menu').on('mouseenter mouseleave', 'h3', function() {
+		$('.list-menu h3').toggleClass('menu-hover');
+	});
+
 	//User clicks on list header
 	//User hovers over list items
 	//User clicks on list item
@@ -46,17 +50,22 @@ $(document).ready(function() {
 		$('.add-item-text').val('');
 	});
 
-	//User hovers over Add button
+	//User hovers over Add, Check-All, or Remove-All Button
 	$('.list-mgmt-box button').hover(function() {
 		$(this).toggleClass('user-hover');
 	});
 
-	//User hovers over Check-all button
-
-
 	//User clicks Check-all button
-		//All items 
-	//User clicks Remove-all button
+	$('.check-all').click(function() {
+		$('.current-list li').addClass('checked');
+		$('.fa-square-o').addClass('hidden');
+		$('.fa-check-square-o').removeClass('hidden');
+	});
+
+	//User clicks remove-all button
+	$('.remove-all').click(function() {
+		$('.current-list li').remove();
+	});
 
 //SHOPPING-LIST EVENTS
 
