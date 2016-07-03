@@ -15,10 +15,6 @@ body {}
 	margin: 0 auto;
 }
 
-.hidden {
-	display: none;
-}
-
 /* -- ELEMENT STYLINGS -- */ 
 
 /* -- <HEADER> STYLINGS -- */
@@ -52,23 +48,47 @@ main {
 section.list-menu {}
 
 .list-menu h3 {
+	display: inline;
 	font-size: 32px;
 	margin: 0;
 }
 
-section.list-menu nav {
-	display: inline;
+section.list-menu i.fa-angle-down {
+	margin-left: 5px;
 }
-
-section.list-menu i.fa-angle-down {}
 
 section.list-menu ul {
-	display: none;
 	list-style: none;
 	padding-left: 0;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  background-color: #ddd;
+  max-width: 400px;
+  margin: 8px 0;
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+
 }
 
-section.list-menu ul li {}
+section.list-menu ul li {
+	padding: 5px 7px;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+section.list-menu ul li.create-new-list {
+	display: flex;
+}
+
+section.list-menu ul li.create-new-list i.fa-plus {
+  margin-right: 8px;
+  padding: 2.5px 0;
+}
+
+section.list-menu ul li.create-new-list input {
+	width: 100%;
+}
 
 /* -- .LIST-MGMT-BOX STYLING -- */
 
@@ -135,8 +155,6 @@ section.shopping-list ul.current-list li i.remove-button {
 	float: right;
 }
 
-section.shopping-list ul.hidden-list {}
-
 /* -- STYLINGS FOR INTERACTION -- */
 
 /* -- .MENU-HOVER STYLING -- */
@@ -162,6 +180,12 @@ li.checked {
 
 .icon-hover {
 	font-weight: bold;
+}
+
+/* -- .HIDDEN CLASS --*/
+
+.hidden {
+	display: none;
 }
 
 /* ----------------------------------- */

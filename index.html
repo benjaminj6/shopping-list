@@ -19,17 +19,20 @@
 	</header>
 	<main>
 		<section class="list-menu">
-			<h3>My List <i class="fa fa-angle-down" aria-hidden="true"></i>	
-			</h3> 
+			<div class="list-menu-header">
+				<h3>My List</h3> 
+				<i class="fa fa-angle-down" aria-hidden="true"></i>	
+			</div>
 				<!-- List hidden until user clicks -->
-				<ul>
-					<li>#1</li>
-					<li>#2</li>
-					<li>#3</li>
-					<li class="create-new-list">
-						<i class="fa fa-plus"></i>
-						<input type="text" placeholder="New List">
-					</li>
+			<ul class="list-nav">
+				<li class="my-list hidden nav-list">My List</li>
+				<li class='list-1 nav-list'>#1</li>
+				<li class="nav-list">#2</li>
+				<li class='nav-list'>#3</li>
+				<li class="create-new-list">
+					<i class="fa fa-plus"></i>
+					<input class='new-list-text' type="text" placeholder="New List">
+				</li>
 				</ul>
 		</section>
 		<section class="list-mgmt-box">
@@ -44,7 +47,7 @@
 			</div>
 		</section>			
 		<section class="shopping-list">
-			<ul class="current-list">
+			<ul class="current-list my-list">
 				<li>
 					<div class="check-box">
 						<i class="hidden fa fa-check-square-o" aria-hidden="true"></i>
@@ -78,13 +81,13 @@
 					<i class="remove-button fa fa-trash-o" aria-hidden="true"></i>
 				</li>
 			</ul>
-			<ul class="hidden hidden-list">
+			<ul class="hidden hidden-list list-1">
 				<li>
 					<div class="check-box">
 						<i class="hidden fa fa-check-square-o" aria-hidden="true"></i>
 						<i class="fa fa-square-o" aria-hidden="true"></i>
 					</div>
-					<p>Item</p>
+					<p>Yay New List</p>
 					<i class="remove-button fa fa-trash-o" aria-hidden="true"></i>
 				</li>
 			</ul>
