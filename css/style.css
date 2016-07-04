@@ -82,18 +82,30 @@ section.list-menu ul li {
 }
 
 section.list-menu ul li.create-new-list {
-	display: flex;
+	width: 210px;
+}
+
+section.list-menu ul li.create-new-list:hover {
+	width: 240px;
 }
 
 section.list-menu ul li.create-new-list i.fa-plus {
-  margin-right: 8px;
+  margin-right: 5px;
   padding: 2.5px 0;
 }
 
 section.list-menu ul li.create-new-list input {
-	width: 100%;
+	width: 174px;
 	background: none;
 	border: none;
+}
+
+section.list-menu ul li.create-new-list input.user-hover {
+	width: 204px;
+}
+
+section.list-menu ul li.create-new-list input:focus {
+	outline: none;
 }
 
 /* -- .LIST-MGMT-BOX STYLING -- */

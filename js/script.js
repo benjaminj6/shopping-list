@@ -43,6 +43,11 @@ $(document).ready(function() {
 		$(this).toggleClass('hidden');
 	});
 
+	//User hovers over 'create new list'
+
+		$('.create-new-list').hover(function() {
+			$('.new-list-text').toggleClass('user-hover');
+		});
 	//User presses 'enter' or '+' to create new list
 	//function that generates html for the nav-list item
 	function createNavItemHtml() {	
