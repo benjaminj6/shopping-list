@@ -72,11 +72,12 @@ $(document).ready(function() {
 		return newShoppingListHtml;
 	}
 
-	$('.create-new-list i.fa-plus').click(function () {
+	function addNewShoppingList() {
 		var userInput = $('.new-list-text').val();
 		var newShoppingListClass = userInput.split(' ').join('-').toLowerCase();
 
-		if(userInput.length > 0) {
+		if (userInput.length > 0) {
+			
 			$('.create-new-list').before(createNavItemHtml());
 			$('.list-menu-header h3').text($('.new-list-text').val());
 			$('.list-nav').toggleClass('hidden');
@@ -84,54 +85,33 @@ $(document).ready(function() {
 			$('.list-nav li.hidden').toggleClass('hidden');
 			$('.list-nav li.' + newShoppingListClass).toggleClass('hidden');
 			$('.shopping-list ul.current-list').toggleClass('hidden current-list');
-			
+		
 			//Retrieve ListName Class
-			var listActiveClasses = $(this).attr('class').split(' ');
+			var listActiveClasses = $('.list-nav li.' + newShoppingListClass).attr('class').split(' ');
 			var thisListClass = listActiveClasses[0];
-			
-			//Retrives List with same class and shows it
+		
+		//Retrives List with same class and shows it
 			$('.shopping-list').children('.' + thisListClass)
 				.toggleClass('hidden current-list');
 
 		} else {
-			alert('Please enter a name for your list!')
+			alert('Please enter a name for your list!')			
 		};
-		
-		userInput = $('.new-list-text').val('');
 
+		//Resets the UserInpu to empty
+		var userInput = $('.new-list-text').val('');
+
+	};
+
+	$('.create-new-list i.fa-plus').click(function() {
+		addNewShoppingList();
 	});
 
 	$('.list-menu').keydown(function(event) {
 		if(event.which == 13) {
-
-			var userInput = $('.new-list-text').val();
-			var newShoppingListClass = userInput.split(' ').join('-').toLowerCase();
-
-			if(userInput.length > 0) {
-				$('.create-new-list').before(createNavItemHtml());
-				$('.list-menu-header h3').text($('.new-list-text').val());
-				$('.list-nav').toggleClass('hidden');						
-				$('.shopping-list ul.current-list').toggleClass('hidden current-list');
-
-				//Creates New Shopping List
-				$('.shopping-list').append(createNewShoppingList());
-				$('.list-nav li.hidden').toggleClass('hidden');
-				$('.list-nav li.' + newShoppingListClass).toggleClass('hidden');
-				
-				//Retrieve ListName Class
-				var listActiveClasses = $(this).attr('class').split(' ');
-				var thisListClass = listActiveClasses[0];
-				
-				//Retrives List with same class and shows it
-				$('.shopping-list').children('.' + thisListClass)
-					.toggleClass('hidden current-list');
-
-			} else {
-				alert('Please enter a name for your list!')
-			};
-			userInput = $('.new-list-text').val('');
+			addNewShoppingList();
 		};
-	})
+	});
 
 //--------LIST-MGMT-BOX EVENTS---------
 
