@@ -91,7 +91,8 @@ $(document).ready(function() {
 		} else {
 			alert('Please enter a name for your list!')
 		};
-		$('.new-list-text').val('');
+		
+		userInput = $('.new-list-text').val('');
 
 	});
 
@@ -123,6 +124,7 @@ $(document).ready(function() {
 			} else {
 				alert('Please enter a name for your list!')
 			};
+			userInput = $('.new-list-text').val('');
 		};
 	})
 

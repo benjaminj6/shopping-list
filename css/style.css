@@ -20,8 +20,10 @@ body {}
 /* -- <HEADER> STYLINGS -- */
 
 header {
-	background-color: #aaa;
-}
+	background: #83a4d4; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}        
 
 header div.content-padding {
  padding: 20px 0;
@@ -63,12 +65,14 @@ section.list-menu ul {
   z-index: 999;
   position: absolute;
   width: 100%;
-  background-color: #ddd;
   max-width: 400px;
   margin: 8px 0;
   padding: 10px 0;
-  border-bottom: 2px solid black;
-
+	border-bottom: 2px solid black;
+	background: #83a4d4; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	        	        
 }
 
 section.list-menu ul li {
@@ -88,6 +92,8 @@ section.list-menu ul li.create-new-list i.fa-plus {
 
 section.list-menu ul li.create-new-list input {
 	width: 100%;
+	background: none;
+	border: none;
 }
 
 /* -- .LIST-MGMT-BOX STYLING -- */
@@ -109,7 +115,7 @@ section.list-mgmt-box div.add-item input.add-item-text {
 }
 
 section.list-mgmt-box div.add-item button.add-button {
-	background-color: #aaa;
+	background-color: #96c5e4;
 	border: none;
 	padding: 3px 5px;
 }
@@ -119,7 +125,7 @@ section.list-mgmt-box div.list-mgmt-buttons {
 }
 
 section.list-mgmt-box div.list-mgmt-buttons button {
-	background-color: #aaa;
+	background-color: #96c5e4;
 	border: none;
 	max-width: 60%;
 }
@@ -153,6 +159,7 @@ section.shopping-list ul.current-list li p {
 
 section.shopping-list ul.current-list li i.remove-button {
 	float: right;
+	color: #ff4343;
 }
 
 /* -- STYLINGS FOR INTERACTION -- */
